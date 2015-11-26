@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - SA2015@localhost" uuid="4fad97d6-6218-4cfc-9e3a-008ff802b957">
+    <database-info product="MySQL" version="5.7.9" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.2">
+      <schema id="1" name="SA2015"/>
+      <table id="2" parent="1" name="Stop"/>
+      <table id="3" parent="1" name="Amenity"/>
+      <table id="4" parent="1" name="Route"/>
+      <table id="5" parent="1" name="RouteStop"/>
+      <column id="6" parent="2" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="7" parent="2" name="Longitude">
+        <mandatory>1</mandatory>
+        <data-type>float(10,7)</data-type>
+      </column>
+      <column id="8" parent="2" name="Latitude">
+        <mandatory>1</mandatory>
+        <data-type>float(9,7)</data-type>
+      </column>
+      <column id="9" parent="2" name="Wheelchair">
+        <data-type>varchar(7)</data-type>
+      </column>
+      <column id="10" parent="2" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="11" parent="2" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="12" parent="3" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="13" parent="3" name="Longitude">
+        <mandatory>1</mandatory>
+        <data-type>float(10,7)</data-type>
+      </column>
+      <column id="14" parent="3" name="Latitude">
+        <mandatory>1</mandatory>
+        <data-type>float(9,7)</data-type>
+      </column>
+      <column id="15" parent="3" name="Wheelchair">
+        <data-type>varchar(7)</data-type>
+      </column>
+      <column id="16" parent="3" name="Type">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="17" parent="3" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="18" parent="3" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="19" parent="4" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="20" parent="4" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="21" parent="4" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="22" parent="5" name="Route_ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="23" parent="5" name="Stop_ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="24" parent="5" name="OrderKey">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="25" parent="5" name="PRIMARY">
+        <columns>OrderKey</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
